@@ -1,0 +1,44 @@
+import java.awt.*;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTabbedPane;
+
+
+public class Schema extends JLabel{
+	private JPanel[] pl = new JPanel[5];
+	private Lektion[] platser= new Lektion[25];
+	private JPanel p1 = new JPanel();  
+	private JPanel p2 = new JPanel();
+	private Elev e;
+	private Lärare l;
+	
+	public Schema(){
+		this.setPreferredSize(new Dimension(1100,610));
+		this.setLayout(new FlowLayout());
+		p1.setPreferredSize(new Dimension(30,600));
+		p1.setBackground(Color.white);
+		this.add(p1, BorderLayout.WEST);
+		for(int i=0;i<5;i++){
+			pl[i] = new JPanel();
+			pl[i].setPreferredSize(new Dimension(200,600));
+			pl[i].setBackground(Color.black);
+			pl[i].setLayout(new GridLayout(5,1));
+			this.add(pl[i]);
+		}
+		p2.setPreferredSize(new Dimension(30,600));
+		p2.setBackground(Color.white);
+		this.add(p2, BorderLayout.EAST);
+		
+		//test del
+		for(int i=0;i<5;i++){
+			platser[i] = new Lektion();
+			platser[i].setText(platser[i].getSal());
+			pl[0].add(platser[i]);
+		}
+		//test del slut
+		
+		this.setVisible(true);
+	}
+}

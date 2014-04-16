@@ -1,0 +1,23 @@
+import java.awt.*;
+import java.util.ArrayList;
+
+import javax.swing.JLabel;
+
+
+public class Lektion extends JLabel{
+	private String sal;
+	private Kurs kurs;
+	private ArrayList<Schema> schema = new ArrayList<Schema>();
+	
+	public Lektion(){
+		this.setPreferredSize(new Dimension(200,120));
+		this.setBackground(Color.black);
+	}
+	public String getSal(){
+		return sal;
+	}
+	public String getNamn(){
+		String s = Kurs.getKursNamn();
+		return s;
+	}
+}

@@ -1,0 +1,14 @@
+
+public class Char {
+	public static void main(String[] args) {
+		
+		
+		char snbh='u0074';		
+		char t='u0074';
+		char a='u0061';
+		char r='u0072';
+		
+		
+	}
+
+}

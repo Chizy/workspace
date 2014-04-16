@@ -1,0 +1,26 @@
+import javax.swing.JOptionPane;
+
+
+public class Bil {
+	private String reg;
+	private String märke;
+	private Bilägare ägare;
+	
+	public Bil(){
+		reg = JOptionPane.showInputDialog("Registrerings nr.?");
+		märke = JOptionPane.showInputDialog("Märke?");
+		System.out.print("klar");
+	}
+
+	public void säljd(){
+		
+	}
+	
+	public void köpt(Bilägare b){
+		ägare = b;
+		System.out.print("köpt");
+	}
+
+
+
+}

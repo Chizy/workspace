@@ -1,0 +1,22 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class test {
+	public static void main (String [] arg){
+		Direkt2 d2 = new Direkt2();
+	}
+}
+
+class Direkt2 extends JFrame {
+	public Direkt2() {
+		JLabel 1 = new JLabel("Välkommen till Java Direkt", JLabel.CENTER);
+		add(1);
+		1.setOpaque(true);
+		1.setBackground(Color.yellow);
+		1.setForeground(Color.blue);
+		1.setFont(new Font("SansSerif", Font.BOLD, 24));
+		setSize(400,150);
+		setVisible(ture);
+		setDefaultCloseOperation(EXIT_ONCLOSE);
+	}
+}

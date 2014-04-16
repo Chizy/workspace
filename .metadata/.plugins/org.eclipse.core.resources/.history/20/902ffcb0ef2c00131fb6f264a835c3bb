@@ -1,0 +1,48 @@
+import java.awt.*;
+import javax.swing.*;
+import java.util.*;
+import java.awt.event.*;
+
+public class visaKlocka {
+
+    public static void main(String[] args) {
+       KlockVisare v = new KlockVisare();  // Skapa en KlockVisare
+    }
+}
+
+class KlockVisare extends JFrame implements ActionListener {
+  private Tidpunkt tp = new Tidpunkt();
+  private JLabel l;
+
+  public KlockVisare() { // Konstruktur, anropas automatiskt
+      javax.swing.Timer tim = new javax.swing.Timer(1000, this);
+      tim.start();   // starta timern
+
+      Calendar c = Calendar.getInstance();
+
+      tp.sätt(c.get(Calendar.HOUR_OF_DAY),
+              c.get(Calendar.MINUTE),
+              c.get(Calendar.SECOND));
+
+      l = new JLabel(tp.toString(), JLabel.CENTER);
+
+      getContentPane().add(l);  // Placera i fönstret
+
+      l.setOpaque(true);                    // Ogenomskinlig bakgrund
+      l.setBackground(Color.black);
+      l.setForeground(Color.white);
+      l.setFont(new Font("SansSerif", Font.BOLD, 24));
+
+      setSize(200, 75);                     // Fönstrets storlek
+      setLocation( 200,200);                // Fönstrets placering
+      setVisible(true);                     // Gör fönstret synligt
+
+      setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
+
+    public void actionPerformed(ActionEvent e) {
+          // Hit kommer man automatiskt 1 gång per sekund
+      tp.ticka();
+      l.setText(tp.toString());
+    }
+}

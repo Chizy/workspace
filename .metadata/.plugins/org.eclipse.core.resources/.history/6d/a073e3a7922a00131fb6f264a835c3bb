@@ -1,0 +1,48 @@
+public class Testkör {
+
+	public static void main(String [] arg){
+		int i=0;
+		int f=0;
+		int u=0;
+		Kort k1[] =new Kort[52];
+		int valörenF=(int)(13*Math.random()+1);
+		int färgenF=(int)(4*Math.random()+1);
+		k1[0] = new Kort(valörenF, färgenF);
+		Kort kk=new Kort(valörenF, färgenF);
+		String s1 = k1[i].toString();
+		String s2 = kk.toString();
+		
+		
+		while(u<52){
+		
+			for (i=0;f<k1.length;i++){
+			
+			if (s1.equals(s2)){
+				
+				int valören=(int)(13*Math.random()+1);
+				int färgen=(int)(4*Math.random()+1);
+				kk = new Kort(valören, färgen);
+				s2 = kk.toString();
+				i=0;
+			
+			
+			}else{
+				
+				if (f==52){
+					break;	
+				}
+				k1[f]=kk;
+				System.out.println(f+" "+k1[f].toString());
+				f++;
+				
+				int valören=(int)(13*Math.random()+1);
+				int färgen=(int)(4*Math.random()+1);
+				kk = new Kort(valören, färgen);
+				s2 = kk.toString();
+				i=0;
+			}
+			s1 = k1[i].toString();
+		}
+		}
+	}
+}

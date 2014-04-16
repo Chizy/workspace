@@ -1,0 +1,38 @@
+package Olympiad;
+
+import static javax.swing.JOptionPane.showInputDialog;
+
+import java.util.Arrays;
+
+public class Sortera_spellistan {
+	public static void main(String[] args) {
+		String indata = showInputDialog("Längd på lista?");
+		int mängd = Integer.parseInt(indata);
+		int[]a=new int[mängd];
+		int k=(a.length+1);
+		for(int h=0;h<mängd;h++){
+			String indata2 = showInputDialog("Nummer på plats: "+h+"?");
+			a[h] = Integer.parseInt(indata2);
+		}
+		
+		for(int i=0;i<=k;i++){
+			for(int i2=0;i2<(a.length-1);){
+				if(a[i2]>=a[(i2+1)]){
+					int b=a[(i2+1)];
+					a[(i2+1)]=a[i2];
+					a[i2]=b;
+					
+					System.out.println(Arrays.toString(a)+i2);
+				
+					i2++;
+				}
+				if(a[i2]<a[(i2+1)]){
+					i2 = (a.length-1);
+				}
+			}
+			
+		}
+		
+		System.out.println(Arrays.toString(a));
+	}
+}

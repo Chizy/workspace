@@ -1,0 +1,58 @@
+import java.awt.BorderLayout;
+import java.awt.event.*;
+import javax.swing.*;
+
+
+public class Boxbox extends JFrame implements ActionListener{
+	
+	private static int nr;
+	
+	private JLabel  lab = new JLabel("1", JLabel.CENTER);
+	private JButton till = new JButton("Lägg till!");
+
+	public Boxbox(){
+		nr= nr+1;
+		add(lab); add(till, BorderLayout.WEST);
+		setSize(250,250);
+	    setVisible(true);
+	}
+	
+	public static 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		Boxbox b1 = new Boxbox();
+		
+	}
+
+
+
+
+
+
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

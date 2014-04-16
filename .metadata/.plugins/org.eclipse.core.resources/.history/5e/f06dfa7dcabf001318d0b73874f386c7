@@ -1,0 +1,8 @@
+import java.util.ArrayList;
+
+
+public class Lektion {
+	private String sal;
+	private Kurs kurs;
+	private ArrayList<Schema> schema = new ArrayList<Schema>();
+}

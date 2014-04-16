@@ -1,0 +1,33 @@
+
+public class Hisstest {
+
+	private int riktning;
+	private int våning;
+	
+	
+	public void körTill(int v){
+		
+		
+	}
+	
+	public void stanna(){
+		
+		
+	}
+	
+	public int vilkenVåning(){
+		
+		int tal=0;
+		
+		return tal;
+	}
+	
+	
+	public static void main(String [] arg){
+		
+		Hisstest h1=new Hisstest();
+		
+		
+	}
+	
+}

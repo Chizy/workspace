@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+
+public class Testkör {
+
+	
+	public static void main(String [] arg) throws InterruptedException{
+		
+		Bilis b1 = new Bilis();
+		
+		b1.tuta();
+		b1.setLjus(1);
+		b1.växla(2);
+		b1.ändraHast(110);
+		b1.stanna();
+		System.out.print(hast+"\n")
+	}
+	
+	
+	
+}

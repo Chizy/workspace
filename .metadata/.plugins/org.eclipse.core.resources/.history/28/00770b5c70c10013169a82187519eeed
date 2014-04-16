@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+
+public class Kurs {
+	private String kursNamn;
+	private String klass;
+	private Lärare lärare;
+	private ArrayList<Elev> elev = new ArrayList<Elev>();
+	private ArrayList<Lektion> lektioner = new ArrayList<Lektion>();
+	private int timmaPerV;
+	
+	
+	
+	public String getKursNamn() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

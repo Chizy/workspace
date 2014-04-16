@@ -1,0 +1,18 @@
+import java.awt.*;
+import javax.swing.JPanel;
+
+
+public class Schema extends JPanel{
+	private JPanel[] pl = new JPanel[5];
+	private Lektion[] platser= new Lektion[25];
+	private Elev e;
+	private Lärare l;
+	
+	public Schema(){
+		this.setPreferredSize(new Dimension(1000,600));
+		this.setBackground(Color.white); 
+		this.setLayout(new GridLayout(1,5));
+		pl[0].setPreferredSize(new Dimension(200,600));
+		setVisible(true);
+	}
+}

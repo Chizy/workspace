@@ -1,0 +1,9 @@
+import java.awt.*;
+
+public class LunchRast extends Rast{
+
+	public LunchRast(){
+		this.setPreferredSize(new Dimension(200,50));
+		this.setVisible(true);
+	}
+}

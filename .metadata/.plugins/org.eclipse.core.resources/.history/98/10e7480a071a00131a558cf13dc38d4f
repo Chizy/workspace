@@ -1,0 +1,15 @@
+package Övningett;
+
+import javax.swing.*;
+
+public class uppsju {
+	public static void main(String[] args) {
+		String indata;
+		indata = JOptionPane.showInputDialog("Svårighetsgrad?");
+		int domare=0;
+		while (domare <=7){
+			
+		}
+	}
+
+}

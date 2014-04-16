@@ -1,0 +1,53 @@
+
+public class Hisstest {
+
+	private int riktning=0;
+	private int våning=0;
+	
+	
+	public void körTill(int v){
+		
+		if(våning<v){
+			riktning=1;
+			
+			for(int i=våning;i<v;i++){
+				
+				våning++;
+				
+				System.out.print("Våning "+våning);
+				System.out.print("Riktning "+riktning);
+			}
+		
+		}
+		if(våning>v){
+			riktning=-1;
+				
+			for(int i=våning;i<v;i=i-1){
+				
+				våning=våning-1;
+					
+				System.out.print("Våning "+våning);
+				System.out.print("Riktning "+riktning);
+			}
+		}
+		
+	}
+	
+	public void stanna(){
+		
+		riktning=0;
+		
+	}
+	
+	public int vilkenVåning(){
+		
+		return våning;
+	}
+	
+	public int vilkenRiktning(){
+		
+		return riktning;
+	}
+	
+	
+}

@@ -1,0 +1,7 @@
+
+public class LunchRast extends Rast{
+
+	public LunchRast(){
+		
+	}
+}

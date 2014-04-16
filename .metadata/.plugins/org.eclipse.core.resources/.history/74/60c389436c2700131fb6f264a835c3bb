@@ -1,0 +1,33 @@
+
+public class Bilis {
+
+	private int växel;
+	private int hast;
+	private int ljus;
+	private boolean tuta;
+	
+	public void växla(int v){
+		if(v<=5 && v>=-1){
+			växel=v;
+		}else{
+			System.out.print("FEL!");
+		}
+	}
+
+	public void ändraHast(int h){
+		
+	}
+	
+	public void setLjus(int l){
+		
+	}
+
+	public void stanna(){
+		
+	}
+	
+	public void tuta(){
+		
+	}
+
+}

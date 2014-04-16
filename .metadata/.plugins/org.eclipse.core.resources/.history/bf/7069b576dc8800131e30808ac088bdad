@@ -1,0 +1,34 @@
+package Olympiad;
+
+public class Vikingahackare {
+	public static void main(String[] args) {
+		int längd = 2; //input 1
+		int k = 0;
+		int k2 = 2;
+		String s1 = "";
+		String s2 = "";
+		String[] a = {"a 1001","b 1100"};
+		for(int h=0;h<längd;h++){
+			//a[h] =        //input "längd"
+		}
+		String kod = "1001110010110001"; //input sista
+		//System.out.print(kod.substring(k, k+4));
+		
+		for(int i=0;i<=kod.length()/4;i++){
+			for(int i2=0;i2<längd;i2++){
+				if(k>=kod.length()){
+					System.out.print("?");
+					break;
+				}
+				s1 = kod.substring(k, k+4);
+				s2 = a[i2].substring(k2, k2+4);
+				if(s1.equalsIgnoreCase(s2)){
+					System.out.print(a[i2].substring(0, 0));
+				}
+				k=k+4;
+			}
+		}
+		
+	}
+
+}

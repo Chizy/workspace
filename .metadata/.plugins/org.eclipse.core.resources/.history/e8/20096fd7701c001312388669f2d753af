@@ -1,0 +1,13 @@
+import javax.swing.*;
+
+public class blubbis {
+	public static void main(String[] args) {
+		int i=9;
+		int tal;
+		for(int n=1; n<=9; n++){
+			tal = n*i;
+			System.out.print(n+" * "+i+" = "+tal + "\n");
+		}
+	
+	}
+}

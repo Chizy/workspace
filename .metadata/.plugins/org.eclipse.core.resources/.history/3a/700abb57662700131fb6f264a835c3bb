@@ -1,0 +1,29 @@
+
+public class Bilis {
+
+	private int växel;
+	private int hast;
+	private int ljus;
+	private boolean tuta;
+	
+	public void växla(int v){
+		
+	}
+
+	public void ändraHast(int h){
+		
+	}
+	
+	public void setLjus(int l){
+		
+	}
+
+	public void stanna(){
+		
+	}
+	
+	public void tuta(){
+		
+	}
+
+}

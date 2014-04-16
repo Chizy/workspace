@@ -1,0 +1,47 @@
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JWindow;
+
+
+public class Boxbox extends JWindow implements ActionListener{
+	
+	
+	private static int nr;
+	
+	private JLabel  lab = new JLabel("1", JLabel.CENTER);
+	private JButton till = new JButton("Lägg till!");
+
+	
+	public Boxbox(){
+		add(lab); 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

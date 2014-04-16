@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.emf.customizationManager">
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/UML%20Schedauto/model.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/UML%20Schedauto/model.uml#_Kru-QLNBEeOR8fyuuIt2ww"/>
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+				<item value="platform:/resource/UML%20Schedauto/model.uml#_b5feALMxEeO12pWlAyhj2w"/>
+				<item value="platform:/resource/UML%20Schedauto/model.uml#_5_rD4LMwEeO12pWlAyhj2w"/>
+			</list>
+		</section>
+	</section>
+</section>

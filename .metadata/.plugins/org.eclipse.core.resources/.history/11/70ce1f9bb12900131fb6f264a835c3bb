@@ -1,0 +1,17 @@
+
+
+public class Testkör {
+
+	
+	public static void main(String [] arg){
+		
+		Kort k1 = new Kort(13, 4);
+		
+		String ut = k1.toString();
+		
+		System.out.print(ut);
+	}
+	
+	
+	
+}

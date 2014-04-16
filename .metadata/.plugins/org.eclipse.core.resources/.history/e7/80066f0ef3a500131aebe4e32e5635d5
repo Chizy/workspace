@@ -1,0 +1,44 @@
+import javax.swing.JButton;
+import javax.swing.JLabel;
+
+
+public class Boxbox {
+	
+	
+	private static int nr;
+	
+	private JLabel  lab = new JLabel("1", JLabel.CENTER);
+	private JButton till = new JButton("Lägg till!");
+
+	
+	public Boxbox(){
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

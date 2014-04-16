@@ -1,0 +1,20 @@
+package Övningett;
+
+import javax.swing.*;
+
+public class uppfemA {
+	public static void main(String[] args) {
+		String indata;
+		indata = JOptionPane.showInputDialog("Vilket år är det nu igen?");
+		int nuår = Integer.parseInt(indata);
+		indata = JOptionPane.showInputDialog("Vad är det för årsmodell på kärran?");
+		int årsmodell = Integer.parseInt(indata);
+		double skillnad = nuår - årsmodell;
+		if (skillnad >= 5){
+			JOptionPane.showMessageDialog(null, "Välj en halvförsäkring");
+		}else {
+			JOptionPane.showMessageDialog(null, "Välj en helförsäkring");
+		}
+	}
+
+}

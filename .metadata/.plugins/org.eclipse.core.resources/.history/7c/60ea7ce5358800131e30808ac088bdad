@@ -1,0 +1,13 @@
+package Olympiad;
+
+public class Vikingahackare {
+	public static void main(String[] args) {
+		int längd = 16; //input 1
+		String[]a=new String[längd];
+		for(int h=0;h<längd;h++){
+			//a[h] = input "längd"
+		}
+		String kod = "1001110010110001"; //input sist
+	}
+
+}

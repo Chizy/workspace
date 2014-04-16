@@ -1,0 +1,26 @@
+
+public class Testkör {
+
+	
+	public static void main(String [] arg){
+		
+		Hisstest h1=new Hisstest();
+		
+		h1.stanna();
+		
+		int rrr=h1.vilkenRiktning();
+		
+		System.out.print("Riktning ="+rrr);
+		
+		
+		Hisstest h2=new Hisstest();
+		
+		int rr=h2.vilkenRiktning();
+		
+		System.out.print("Riktning ="+rr);
+		
+	}
+	
+	
+	
+}

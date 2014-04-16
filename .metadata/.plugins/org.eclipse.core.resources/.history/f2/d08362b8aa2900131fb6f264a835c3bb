@@ -1,0 +1,18 @@
+
+
+public class Testkör {
+
+	
+	public static void main(String [] arg){
+		
+		Person p1 = new Person(25, Axel, Niondetrevägen);
+		
+		p1.getÅlder();
+		p1.fyllaÅr();
+		p1.getÅlder();
+		
+	}
+	
+	
+	
+}

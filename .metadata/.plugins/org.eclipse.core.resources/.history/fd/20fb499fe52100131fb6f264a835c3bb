@@ -1,0 +1,35 @@
+
+public class Hisstest {
+
+	private int riktning=0;
+	private int våning=1;
+	
+	
+	public void körTill(int v){
+		
+		if(våning<v){
+			
+		}
+		
+	}
+	
+	public void stanna(){
+		
+		riktning=0;
+		
+	}
+	
+	public int vilkenVåning(){
+		
+		
+		return Våning;
+	}
+	
+	public int vilkenRiktning(){
+		
+		
+		
+	}
+	
+	
+}

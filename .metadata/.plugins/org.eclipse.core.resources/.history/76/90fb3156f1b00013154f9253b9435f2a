@@ -1,0 +1,138 @@
+import java.awt.FlowLayout;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+
+public class texteditor extends JFrame implements ActionListener {
+
+ 
+ 
+private static final long serialVersionUID = 1L;
+static JTextField filnamn = new JTextField(15);
+    JButton open = new JButton("Open");
+    JButton save = new JButton("Save");
+    JButton copy = new JButton("Copy");
+    JButton cut = new JButton("Cut");
+    JButton paste = new JButton("Paste");
+    static JTextArea text = new JTextArea(15,30);
+    JScrollPane scrollPane = new JScrollPane( text );
+    
+
+    
+    
+   public  texteditor(){
+  setLayout(new FlowLayout());
+  add(filnamn); 
+  add(open);
+  add(save);
+  add(copy);
+  add(cut);
+  text.setLineWrap(true);
+  add(paste);
+  add(text);
+  setVisible(true);
+  setSize(500,500);
+  setDefaultCloseOperation(EXIT_ON_CLOSE); 
+  open.addActionListener(this);
+  save.addActionListener(this);
+  copy.addActionListener(this);
+
+}
+
+@Override
+public void actionPerformed(ActionEvent e) {
+if (e.getSource() == open){
+System.out.print("test");
+try {
+open();
+} catch (IOException e1) {
+// TODO Auto-generated catch block
+e1.printStackTrace();
+}
+}
+if (e.getSource() == save){
+System.out.print("test");
+save();
+ 
+}
+if (e.getSource() == copy){
+System.out.print("testxopy");
+copy();
+ 
+}
+ 
+}
+public static void main (String[] arg) {
+    texteditor t = new texteditor();
+    
+    
+  }
+private static void save() {
+ 
+ 
+PrintWriter utFil=null;
+ 
+try {
+utFil = new PrintWriter(new BufferedWriter(new FileWriter("C:/Users/Gym/workspace/prog2/src/"+filnamn.getText()+".txt")));
+} catch (IOException e) {
+e.printStackTrace();
+}
+utFil.print(text.getText());
+utFil.close();
+}
+private static void open() throws IOException {
+String heltext=null;
+BufferedReader inFil=null;
+ 
+try {
+inFil = new BufferedReader(new FileReader("C:/Users/Gym/workspace/prog2/src/"+filnamn.getText()+".txt"));
+} catch (FileNotFoundException e) {
+ 
+e.printStackTrace();
+ 
+ 
+}
+while (true){
+ 
+String text2=inFil.readLine();
+heltext = heltext + text2;
+ 
+if(text2==null){
+text.setText(heltext);
+break;
+}
+ 
+ 
+
+}
+}
+public static void copy(){
+String myString = text.getSelectedText();
+StringSelection stringSelection = new StringSelection (myString);
+Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
+clpbrd.setContents (stringSelection, null);
+}
+
+public static void cut(){
+String myString = text.getSelectedText();
+text.replaceSelection("");
+StringSelection stringSelection = new StringSelection (myString);
+Clipboard clpbrd = Toolkit.getDefaultToolkit ().getSystemClipboard ();
+clpbrd.setContents (stringSelection, null);
+}
+}

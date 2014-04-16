@@ -1,0 +1,25 @@
+import javax.swing.JOptionPane;
+
+
+public class Bilägare extends Person{
+	
+	private Bil bil;
+
+	public void sälj(){
+		
+	}
+	
+	public void köp(Bil b){
+		bil = b;
+		b.köpt(this);
+		
+	}
+
+	public static void main (String arg[]){
+		namn = JOptionPane.showInputDialog("Personens namn?");
+		Bilägare bi1 = new Bilägare();
+		Bil b1 = new Bil();
+		bi1.köp(b1);
+		
+	}
+}

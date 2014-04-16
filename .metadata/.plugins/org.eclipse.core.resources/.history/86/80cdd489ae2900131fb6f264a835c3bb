@@ -1,0 +1,25 @@
+
+public class Kort {
+	
+	private int valör;
+	private int färg;
+	
+	public Kort(int v, int f){
+		if(v<=13 && v>=1 && f<=4 && f>=1){
+			valör=v;
+			färg=f;
+		}
+	}
+	
+	public int avläsFärg(){
+		return färg;
+	}
+	
+	public int avläsValör(){
+		return valör;
+	}
+	
+	public String toString(){
+		return blubb;
+	}
+}

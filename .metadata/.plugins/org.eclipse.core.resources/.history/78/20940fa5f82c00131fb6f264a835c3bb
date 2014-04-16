@@ -1,0 +1,20 @@
+import java.util.Calendar;
+
+import javax.swing.JOptionPane;
+
+
+public class FyllDag {
+
+	public static void main(String[] args) {
+		
+		Calendar c = Calendar.getInstance(); 
+		int år = c.get(Calendar.YEAR);
+		String
+		datum = datum + c.get(Calendar.MONTH);
+		datum = datum + c.get(Calendar.DATE);
+		
+		String s1 = JOptionPane.showInputDialog("Personnummer?");
+		
+	}
+
+}

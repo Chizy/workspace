@@ -1,0 +1,74 @@
+import java.util.concurrent.TimeUnit;
+
+
+public class Bilis {
+
+	private int växel;
+	private int hast;
+	private int ljus;
+	private boolean tuta;
+	
+	public void växla(int v){
+		if(v<=5 && v>=-1){
+			växel=v;
+			System.out.print(växel+"\n");
+		}else{
+			System.out.print("FEL!"+"\n");
+		}
+	}
+
+	public void ändraHast(int h){
+		if(h<=220 && h>=-30){
+			hast=h;
+			if(h>=-30 && h<0){
+				växel=-1;
+			}
+			if(h==0){
+				växel=0;
+			}
+			if(h<=50 && h>0){
+				växel=1;
+			}
+			if(h<=100 && h>50){
+				växel=2;
+			}
+			if(h<=150 && h>100){
+				växel=3;
+			}
+			if(h<=200 && h>150){
+				växel=4;
+			}
+			if(h<=220 && h>200){
+				växel=5;
+			}
+			System.out.print(hast+"\n");
+		}
+	}
+	
+	public void setLjus(int l){
+		if(l<=2 && l>=0){
+			ljus=l;
+			System.out.print(ljus+"\n");
+		}
+	}
+
+	public void stanna(){
+		hast=0;
+		System.out.print(hast+"\n");
+	}
+	
+	public void radar(){
+		if(hast>110){
+			stanna();
+		}
+	}
+	
+	public void tuta() throws InterruptedException{
+		tuta=true;
+		System.out.print(tuta+"\n");
+		TimeUnit.SECONDS.sleep(5);
+		tuta=false;
+		System.out.print(tuta+"\n");
+	}
+
+}

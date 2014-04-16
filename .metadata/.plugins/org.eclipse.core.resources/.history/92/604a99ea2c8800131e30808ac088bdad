@@ -1,0 +1,32 @@
+package Olympiad;
+
+import static javax.swing.JOptionPane.showInputDialog;
+
+import java.util.Arrays;
+
+public class Sortera_spellistan {
+	public static void main(String[] args) {
+		int mängd = 10;
+		int[]a= {9,8,7,6,5,4,3,2,1,2,3,4,5,6,7,8,9,,9,8,7,6,5,4,3,2,1,2,3,4,5,6,7,8,9,0};
+		int k=(a.length+1);
+		int antal = 0;
+		
+		
+		for(int i=0;i<=k;i++){
+			for(int i2=0;i2<(a.length-1);){
+				if(a[i2]<a[(i2+1)]){
+					i2 = (a.length-2);
+				}
+				if(a[i2]>=a[(i2+1)]){
+					int b=a[(i2+1)];
+					a[(i2+1)]=a[i2];
+					a[i2]=b;
+					i2++;
+					antal++;
+				}
+			}
+	}
+		System.out.print(Arrays.toString(a));
+		System.out.print(antal);
+}
+}

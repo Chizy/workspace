@@ -1,0 +1,34 @@
+package Övningett;
+
+import javax.swing.*;
+
+public class uppsju {
+	public static void main(String[] args) {
+		String indata;
+		indata = JOptionPane.showInputDialog("Svårighetsgrad?");
+		double svårgrad = Double.parseDouble(indata);
+		int domare=1;
+		double slutsumma;
+		double summa=0;
+		double Pmin=10;
+		double Pmax=0;
+		while (domare <=7){
+			indata = JOptionPane.showInputDialog("Poäng?");
+			double pong = Double.parseDouble(indata);
+			if (Pmin > pong){
+				Pmin= pong;
+			}
+			if (Pmax < pong){
+				Pmax= pong;
+			}
+			summa= summa + pong;
+			domare++;
+		}
+		
+		summa= summa - Pmin - Pmax;
+		slutsumma= (summa/5)*svårgrad;
+	
+	JOptionPane.showMessageDialog(null, slutsumma + " Poäng");
+	}
+
+}

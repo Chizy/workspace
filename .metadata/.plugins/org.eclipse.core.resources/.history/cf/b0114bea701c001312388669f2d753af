@@ -1,0 +1,13 @@
+
+
+public class blubbis {
+	public static void main(String[] args) {
+		int tal;
+		for(int l=1; l<=10; l++){
+			for(int n=1; n<=10; n++){
+				tal = n*l;
+				System.out.print(n+" * "+l+" = "+tal + "\n");
+			}
+		}
+	}
+}

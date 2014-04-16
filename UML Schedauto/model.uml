@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_2hBywLMwEeO12pWlAyhj2w" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_2hBywbMwEeO12pWlAyhj2w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5_rD4LMwEeO12pWlAyhj2w" name="Elev">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Zd1ykLM_EeOR8fyuuIt2ww" name="klass" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zw9i4LM_EeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zw9i4bM_EeOR8fyuuIt2ww" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_Zw-J8LM_EeOR8fyuuIt2ww">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_b5feALMxEeO12pWlAyhj2w" name="Lärare"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_l9gOsLMzEeO12pWlAyhj2w" name="Person">
+    <generalization xmi:type="uml:Generalization" xmi:id="_nbgoQLZpEeOOGelGVbGI5A" general="_b5feALMxEeO12pWlAyhj2w"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_oD2aoLZpEeOOGelGVbGI5A" general="_5_rD4LMwEeO12pWlAyhj2w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7Iu2ULMzEeO12pWlAyhj2w" name="namn" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ehgILMzEeO12pWlAyhj2w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7ehgIbMzEeO12pWlAyhj2w" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_7ehgIrMzEeO12pWlAyhj2w">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__on2ILNAEeOR8fyuuIt2ww" name="kurser(List)" visibility="private" type="_msVNILM_EeOR8fyuuIt2ww">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AFrlkLNBEeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AFrlkbNBEeOR8fyuuIt2ww" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_AFsMoLNBEeOR8fyuuIt2ww">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QUeBALNEEeOR8fyuuIt2ww" name="schema" visibility="private" type="_Lnx-gLM7EeOR8fyuuIt2ww">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qjt98LNEEeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qjt98bNEEeOR8fyuuIt2ww" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_QjulALNEEeOR8fyuuIt2ww">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Lnx-gLM7EeOR8fyuuIt2ww" name="Schema">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OMNDELM7EeOR8fyuuIt2ww" name="platser(Array)" visibility="private" type="_Kru-QLNBEeOR8fyuuIt2ww">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O8FA0LM7EeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O8Fn4LM7EeOR8fyuuIt2ww" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_O8GO8LM7EeOR8fyuuIt2ww">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0sG3gLM7EeOR8fyuuIt2ww" name="elevSchema">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0sG3gbM7EeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0sG3grM7EeOR8fyuuIt2ww" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1iDBALM7EeOR8fyuuIt2ww" name="lärarSchema">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1iDBAbM7EeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1iDBArM7EeOR8fyuuIt2ww" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gD1twLaCEeOOGelGVbGI5A" name="elev" visibility="private" type="_5_rD4LMwEeO12pWlAyhj2w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gYtKgLaCEeOOGelGVbGI5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gYzRILaCEeOOGelGVbGI5A" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_gY1tYLaCEeOOGelGVbGI5A">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ma_dELaCEeOOGelGVbGI5A" name="lärare" visibility="private" type="_b5feALMxEeO12pWlAyhj2w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m0W_ULaCEeOOGelGVbGI5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m0XmYLaCEeOOGelGVbGI5A" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_m0aCoLaCEeOOGelGVbGI5A">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_msVNILM_EeOR8fyuuIt2ww" name="Kurs">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_66V-kLM_EeOR8fyuuIt2ww" name="kursNamn" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7VRAALM_EeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7VRAAbM_EeOR8fyuuIt2ww" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_7VRnELM_EeOR8fyuuIt2ww">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_L5K3MLNAEeOR8fyuuIt2ww" name="lärare" visibility="private" type="_b5feALMxEeO12pWlAyhj2w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MEEfoLNAEeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MEEfobNAEeOR8fyuuIt2ww" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_MEFGsLNAEeOR8fyuuIt2ww">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sQ3XQLNAEeOR8fyuuIt2ww" name="elever(List)" visibility="private" type="_5_rD4LMwEeO12pWlAyhj2w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wa1dULNAEeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wa1dUbNAEeOR8fyuuIt2ww" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wa2EYLNAEeOR8fyuuIt2ww">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ITKkYLNBEeOR8fyuuIt2ww" name="mängdLektioner" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfjakLNBEeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IfkBoLNBEeOR8fyuuIt2ww" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_IfkBobNBEeOR8fyuuIt2ww">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xm_5ALNBEeOR8fyuuIt2ww" name="lektioner(List)" visibility="private" type="_Kru-QLNBEeOR8fyuuIt2ww">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x-M4ELNBEeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x-NfILNBEeOR8fyuuIt2ww" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_x-NfIbNBEeOR8fyuuIt2ww">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Kru-QLNBEeOR8fyuuIt2ww" name="Lektion">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VVPTkLNBEeOR8fyuuIt2ww" name="sal" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VvgNsLNBEeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vvg0wLNBEeOR8fyuuIt2ww" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_Vvg0wbNBEeOR8fyuuIt2ww">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QzETcLNCEeOR8fyuuIt2ww" name="schema(List)" visibility="private" type="_Lnx-gLM7EeOR8fyuuIt2ww">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RMITsLNCEeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RMITsbNCEeOR8fyuuIt2ww" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_RMI6wLNCEeOR8fyuuIt2ww">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_KBpGILNGEeOR8fyuuIt2ww" name="kurs" visibility="private" type="_msVNILM_EeOR8fyuuIt2ww">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KTMwMLNGEeOR8fyuuIt2ww" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KTMwMbNGEeOR8fyuuIt2ww" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_KTNXQLNGEeOR8fyuuIt2ww">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_X1b5ALZuEeOOGelGVbGI5A" name="Main">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cEMYcLZuEeOOGelGVbGI5A" name="Main"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_p5pRILg2EeOOGelGVbGI5A" name="Sal">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tWcvMLg2EeOOGelGVbGI5A" name="Namn/Nummer" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tx_bsLg2EeOOGelGVbGI5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tyAp0Lg2EeOOGelGVbGI5A" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_tyB38Lg2EeOOGelGVbGI5A">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qiCmgLg5EeOOGelGVbGI5A" name="lektioner(List)" visibility="private" type="_Kru-QLNBEeOR8fyuuIt2ww">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rRtv8Lg5EeOOGelGVbGI5A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rRwzQLg5EeOOGelGVbGI5A" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_rR0doLg5EeOOGelGVbGI5A">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,15 @@
+
+public class Bil {
+	private String reg;
+	private String märke;
+	private Bilägare ägare;
+
+public void sälj(){
+	
+}
+
+public void köp(){
+	
+}
+
+}

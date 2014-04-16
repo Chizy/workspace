@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+
+
+public class Testkör {
+
+	
+	public static void main(String [] arg){
+		
+		Hisstest h1=new Hisstest();
+		String indata= JOptionPane.showInputDialog("")
+		h1.körTill(v);
+		
+		System.out.print(h1.vilkenVåning());
+		
+	}
+	
+	
+	
+}

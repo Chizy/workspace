@@ -1,0 +1,19 @@
+
+
+public class Testkör {
+
+	
+	public static void main(String [] arg) throws InterruptedException{
+		
+		Person p1 = new Person();
+		
+		p1.getÅlder();
+		System.out.print(å)
+		p1.fyllaÅr();
+		p1.getÅlder();
+		
+	}
+	
+	
+	
+}

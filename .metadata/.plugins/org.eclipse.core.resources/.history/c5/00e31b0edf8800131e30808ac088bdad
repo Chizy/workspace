@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package Olympiad;
+
+/**
+ * @author Gym
+ *
+ */
+public class TV_tittande {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

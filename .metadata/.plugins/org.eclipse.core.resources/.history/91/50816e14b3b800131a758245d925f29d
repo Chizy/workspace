@@ -1,0 +1,15 @@
+
+public class Bilägare extends Person{
+	private Bil bil;
+
+	public void sälj(){
+		
+	}
+	
+	public void köp(Bil b){
+		
+		b1.köpt(this);
+	}
+
+	
+}

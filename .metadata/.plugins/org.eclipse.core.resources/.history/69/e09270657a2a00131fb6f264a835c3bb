@@ -1,0 +1,26 @@
+public class Testkör {
+
+	public static void main(String [] arg){
+		int i=1;
+		
+		Kort k1[] =new Kort[53];
+		while (i<=53){
+			double valören=(int)(13*Math.random()+1);
+			double färgen=(int)(4*Math.random()+1);
+			k1[i] = new Kort(valören, färgen);
+			
+			for(Kort ut=k1[i];ut==k1[1] || ut==k1[2] || ut==k1[3] || ut==k1[4] || ut==k1[5] || ut==k1[6] || ut==k1[7] || ut==k1[8] || ut==k1[9] || ut==k1[10] || ut==k1[11] || ut==k1[12] || ut==k1[13] || ut==k1[14] || ut==k1[15] || ut==k1[16] || ut==k1[17] || ut==k1[18] || ut==k1[19] || ut==k1[20] || ut==k1[21] || ut==k1[22] || ut==k1[23] || ut==k1[24] || ut==k1[25] || ut==k1[26] || ut==k1[27] || ut==k1[28] || ut==k1[29] || ut==k1[30] || ut==k1[31] || ut==k1[32] || ut==k1[33] || ut==k1[34] || ut==k1[35] || ut==k1[36] || ut==k1[37] || ut==k1[38] || ut==k1[39] || ut==k1[40] || ut==k1[41] || ut==k1[42] || ut==k1[43] || ut==k1[44] || ut==k1[45] || ut==k1[46] || ut==k1[47] || ut==k1[48] || ut==k1[49] || ut==k1[50] || ut==k1[51] || ut==k1[52] || ut==k1[53];){
+				double valören2=(int)(13*Math.random()+1);
+				double färgen2=(int)(4*Math.random()+1);
+				k1[i] = new Kort(valören2, färgen2);
+			}
+			String ute = k1[i].toString();
+			System.out.print(ute+"\n");
+			i++;
+		}
+		
+	
+	}
+	
+	
+}

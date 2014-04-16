@@ -1,0 +1,9 @@
+
+public class Bilägare extends Person{
+	private Bil b;
+
+	public static void main(String[] args) {
+		
+	}
+
+}

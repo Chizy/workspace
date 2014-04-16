@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+
+
+public class MirrorWord {
+	public static void main(String[] args) {
+		int i=1;
+		String s1= JOptionPane.showInputDialog("Ord?");
+		
+		while(i<=s1.length()){
+			if(i){
+				
+		}
+			if(){
+			
+		}
+		}
+	}
+
+}

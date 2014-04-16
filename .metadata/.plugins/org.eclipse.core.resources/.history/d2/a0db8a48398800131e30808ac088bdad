@@ -1,0 +1,28 @@
+package Olympiad;
+
+public class Vikingahackare {
+	public static void main(String[] args) {
+		int längd = 16; //input 1
+		int k = 0;
+		String aktiv = "";
+		String[] a = new String[längd];
+		for(int h=0;h<längd;h++){
+			//a[h] =        //input "längd"
+		}
+		String kod = "1001110010110001"; //input sista
+		
+		
+		for(int i=0;i<=kod.length()/4;i++){
+			for(int i2=0;i2<längd;i2++){
+				for(int i3=0;i3<4;i3++){
+					k++;
+					aktiv = aktiv+kod.charAt(k);
+					
+				}
+			}
+		}
+	
+	
+	}
+
+}

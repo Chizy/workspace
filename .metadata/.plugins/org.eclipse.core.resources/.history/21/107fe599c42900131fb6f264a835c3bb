@@ -1,0 +1,20 @@
+
+
+public class Testkör {
+
+	
+	public static void main(String [] arg){
+		double valören=(int)(13*Math.random()+1);
+		double färgen=(int)(4*Math.random()+1);
+		Kort k1 = new Kort(valören, färgen);
+		Kort k2 = new Kort(valören, färgen);
+		
+		String ut = k1.toString();
+		String ut = k2.toString();
+		
+		System.out.print(ut);
+	}
+	
+	
+	
+}

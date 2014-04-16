@@ -1,0 +1,12 @@
+
+public class Oljazz {
+	public static void main(String[] args) {
+		int år = 1990;
+		int konsum = Math.pow(3*10, 9);
+		for (int i=konsum, i<=Math.pow(10, 12), i=i*1.04){
+			
+		}
+
+	}
+
+}

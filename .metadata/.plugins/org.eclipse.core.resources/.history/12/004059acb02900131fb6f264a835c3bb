@@ -1,0 +1,14 @@
+
+
+public class Testkör {
+
+	
+	public static void main(String [] arg){
+		
+		Kort k1 = new Kort(0, 0);
+		
+	}
+	
+	
+	
+}

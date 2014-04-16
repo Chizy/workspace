@@ -1,0 +1,19 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.GridLayout;
+import java.util.ArrayList;
+
+import javax.swing.JLabel;
+
+
+public class Lektion extends JLabel{
+	private String sal;
+	private Kurs kurs;
+	private ArrayList<Schema> schema = new ArrayList<Schema>();
+	
+	public Lektion(){
+		this.setPreferredSize(new Dimension(1000,600));
+		this.setBackground(Color.white);
+		this.setLayout(new GridLayout(1,5));
+	}
+}

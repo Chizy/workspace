@@ -1,0 +1,25 @@
+public class Testkör {
+
+	public static void main(String [] arg){
+		int i=1;
+		
+		Kort k1 =new Kort[53];
+		k1[i] = null;
+		String k;
+		while (i<=53){
+			double valören=(int)(13*Math.random()+1);
+			double färgen=(int)(4*Math.random()+1);
+			k1[i] = new Kort(valören, färgen);
+			String ut = k1[i].toString();
+			for(=k1[i];;){
+				
+			}
+			System.out.print(ut+"\n");
+			i++;
+		}
+		
+	
+	}
+	
+	
+}

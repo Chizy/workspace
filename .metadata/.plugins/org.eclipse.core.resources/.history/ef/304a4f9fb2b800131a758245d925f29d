@@ -1,0 +1,13 @@
+
+public class Bilägare extends Person{
+	private Bil bil;
+
+	public void sälj(){
+		
+	}
+	
+	public void köp(){
+		
+	}
+
+}

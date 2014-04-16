@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+
+public class Testkör {
+
+	
+	public static void main(String [] arg) throws InterruptedException{
+		
+		Bilis b1 = new Bilis();
+		
+		b1.tuta();
+		
+	}
+	
+	
+	
+}

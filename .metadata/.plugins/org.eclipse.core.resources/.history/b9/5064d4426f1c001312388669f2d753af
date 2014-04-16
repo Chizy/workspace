@@ -1,0 +1,9 @@
+
+public class blubbis {
+	public static void main(String[] args) {
+		String blash= "Gångertabell: \n"
+		for(int n=1; n<=9; n++){
+			System.out.print();
+		}
+	}
+}

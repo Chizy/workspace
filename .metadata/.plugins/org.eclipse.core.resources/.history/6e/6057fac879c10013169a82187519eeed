@@ -1,0 +1,14 @@
+import java.awt.*;
+
+public class Rast extends Lektion{
+	
+	
+public Rast(Color c){
+	super(Color.black);
+	this.setPreferredSize(new Dimension(200,20));
+	this.setBackground(c);
+	this.setText("Rast");
+	this.setVisible(true);
+}
+
+}

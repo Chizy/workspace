@@ -1,0 +1,22 @@
+import java.util.Calendar;
+
+import javax.swing.JOptionPane;
+
+
+public class FyllDag {
+
+	public static void main(String[] args) {
+		
+		Calendar c = Calendar.getInstance(); 
+		int år = c.get(Calendar.YEAR);
+		int månad = c.get(Calendar.MONTH);
+		int dag = c.get(Calendar.DATE);
+		String datum = år+"-"+månad+"-"+dag;
+		datum = String.format("%02d", 1);
+		String s1 = JOptionPane.showInputDialog("Personnummer?");
+		if(datum.equals(s1)){
+			System.out.print("Grattis!!");
+		}
+	}
+
+}

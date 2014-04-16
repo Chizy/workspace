@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;k2&apos; from expression &apos;k&apos;&#x0D;&#x0A;- Original project: &apos;prog1&apos;&#x0D;&#x0A;- Variable name: &apos;k2&apos;&#x0D;&#x0A;- Destination method: &apos;Testkör.main()&apos;&#x0D;&#x0A;- Variable expression: &apos;k&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;k2&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;{Testkör.java" name="k2" replace="true" selection="373 1" stamp="1380647946281" version="1.0"/>
+</session>

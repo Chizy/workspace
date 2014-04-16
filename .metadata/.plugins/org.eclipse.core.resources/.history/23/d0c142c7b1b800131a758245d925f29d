@@ -1,0 +1,7 @@
+
+public class Bilägare extends Person{
+	private Bil bil;
+
+	
+
+}

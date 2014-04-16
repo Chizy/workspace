@@ -1,0 +1,18 @@
+
+
+public class Testkör {
+
+	
+	public static void main(String [] arg){
+		Math.random();
+		
+		Kort k1 = new Kort(13, 4);
+		
+		String ut = k1.toString();
+		
+		System.out.print(ut);
+	}
+	
+	
+	
+}

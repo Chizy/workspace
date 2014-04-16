@@ -1,0 +1,36 @@
+import java.awt.*;
+import javax.swing.JPanel;
+
+
+public class Schema extends JPanel{
+	private JPanel[] pl = new JPanel[5];
+	private Lektion[] platser= new Lektion[25];
+	private Elev e;
+	private Lärare l;
+	
+	public Schema(){
+		this.setPreferredSize(new Dimension(1000,600));
+		this.setBackground(Color.white); 
+		this.setLayout(new GridLayout(1,5));
+		for(int i=0;i<5;i++){
+			pl[i].setPreferredSize(new Dimension(200,600));
+			pl[i].setLayout(new GridLayout(1,5));
+			this.add(pl[i]);
+		}
+		
+		pl[1].setPreferredSize(new Dimension(200,600));
+		pl[1].setLayout(new GridLayout(1,5));
+		this.add(pl[1]);
+		pl[2].setPreferredSize(new Dimension(200,600));
+		pl[2].setLayout(new GridLayout(1,5));
+		this.add(pl[2]);
+		pl[3].setPreferredSize(new Dimension(200,600));
+		pl[3].setLayout(new GridLayout(1,5));
+		this.add(pl[3]);
+		pl[4].setPreferredSize(new Dimension(200,600));
+		pl[4].setLayout(new GridLayout(1,5));
+		this.add(pl[4]);
+		
+		setVisible(true);
+	}
+}

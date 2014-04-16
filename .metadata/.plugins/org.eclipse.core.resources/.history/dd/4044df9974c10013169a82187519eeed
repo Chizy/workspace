@@ -1,0 +1,9 @@
+
+public class Rast extends Lektion{
+	
+	
+public Rast(){
+	
+}
+
+}

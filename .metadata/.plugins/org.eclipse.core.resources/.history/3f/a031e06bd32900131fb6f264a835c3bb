@@ -1,0 +1,48 @@
+public class Kort {
+	
+	private double valör;
+	private double färg;
+	
+	public Kort(double v, double f){
+		if(v<=13 && v>=1 && f<=4 && f>=1){
+			valör=v;
+			färg=f;
+		}
+	}
+	
+	
+	
+	public String toString(){
+		
+		String blubb = null;
+		
+		if (färg==1){
+			blubb="Hjärter ";
+		}
+		if (färg==2){
+			blubb="Ruter ";
+		}
+		if (färg==3){
+			blubb="Klöver ";
+		}
+		if (färg==4){
+			blubb="Spader ";
+		}
+		if (valör==1){
+			blubb=blubb + "Ess";
+		}
+		if (valör==11){
+			blubb=blubb + "Knäckt";
+		}
+		if (valör==12){
+			blubb=blubb + "Dam";
+		}
+		if (valör==13){
+			blubb=blubb + "Kung";
+		}
+		if (valör>=2 && valör<=10){
+			blubb=blubb + valör;
+		}
+		return blubb;
+	}
+}
