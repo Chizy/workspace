@@ -24,19 +24,17 @@ public class Schema extends JLabel{
 		for(int i=0;i<5;i++){
 			pl[i] = new JPanel();
 			pl[i].setPreferredSize(new Dimension(200,600));
-			pl[i].setBackground(Color.green);
+			pl[i].setBackground(Color.gray);
 			pl[i].setLayout(new FlowLayout());
 			this.add(pl[i]);
 		}
 		p2.setPreferredSize(new Dimension(30,600));
 		p2.setBackground(Color.white);
 		this.add(p2, BorderLayout.EAST);
-		
-		//test del
 		for(int i=0;i<5;i++){
 			for(int i2=0;i2<9;i2++){
 				if(i2%2==0){
-					platser[i2] = new Lektion(Color.black);
+					platser[i2] = new Lektion(Color.white);
 					platser[i2].setOpaque(true);
 					pl[i].add(platser[i2]);
 				}else if(i2==3){
@@ -50,7 +48,6 @@ public class Schema extends JLabel{
 				}
 			}
 		}
-		//test del slut
 		this.setVisible(true);
 	}
 }
