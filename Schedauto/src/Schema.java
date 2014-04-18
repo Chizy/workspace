@@ -10,10 +10,8 @@ public class Schema extends JLabel{
 	private JPanel[] pl = new JPanel[5];
 	private Rast[] rast = new Rast[20];
 	private Lektion[] platser= new Lektion[25];
-	private JPanel p1 = new JPanel();  
+	private JPanel p1 = new JPanel();
 	private JPanel p2 = new JPanel();
-	private Elev e;
-	private Lärare l;
 	
 	public Schema(){
 		this.setPreferredSize(new Dimension(1100,610));
@@ -34,7 +32,7 @@ public class Schema extends JLabel{
 		for(int i=0;i<5;i++){
 			for(int i2=0;i2<9;i2++){
 				if(i2%2==0){
-					platser[i2] = new Lektion(Color.white);
+					platser[i2] = new Lektion();
 					platser[i2].setOpaque(true);
 					pl[i].add(platser[i2]);
 				}else if(i2==3){

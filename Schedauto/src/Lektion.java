@@ -9,17 +9,15 @@ public class Lektion extends JLabel{
 	private Kurs kurs;
 	private ArrayList<Schema> schema = new ArrayList<Schema>();
 	
-	public Lektion(Color c){
+	public Lektion(){
 		this.setPreferredSize(new Dimension(200,90));
-		this.setBackground(c);
-		this.setText("blubb");
+		this.setBackground(Color.white);
 		this.setVisible(true);
 	}
 	public String getSal(){
 		return sal;
 	}
-	public String getNamn(){
-		//String s = Kurs.getKursNamn();
-		return null;
+	public String getLektionNamn(){
+		return kurs.getKursNamn();
 	}
 }
