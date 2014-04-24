@@ -25,7 +25,7 @@ public class Lektion extends JLabel{
 		return i;
 	}
 	public void setLektionNamn(){
-		this.setText(kurs.getKursNamn()+"\n"+sal.getNamn()+"\n"+kurs.getLärareInNamn());
+		this.setText(sal.getNamn()+"\n"+kurs.getKursNamn()+"\n"+kurs.getLärareInNamn());
 		this.setBackground(kurs.getColor());
 	}
 	public void setKurs(Kurs k) {

@@ -119,7 +119,7 @@ public class Main extends JFrame implements ActionListener{
 		
 		for(int i=0;i<25;i++){
 			
-			for(int i2=0;i2<kurs.size();i2++){
+			for(int i2=0;i2<kurs.size();i2++){   
 				
 				if(kurs.get(i2).getPassPerV()>i){
 					int p = -1;

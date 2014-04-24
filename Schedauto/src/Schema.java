@@ -13,7 +13,6 @@ public class Schema extends JLabel{
 	private JPanel p1 = new JPanel();
 	private JPanel p2 = new JPanel();
 	int ks = 0;
-	int ks2 = 0;
 	
 	public Schema(){
 		this.setPreferredSize(new Dimension(1100,610));

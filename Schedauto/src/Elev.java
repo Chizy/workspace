@@ -1,10 +1,8 @@
-import java.util.ArrayList;
 
 
 public class Elev{
 	private String klass;
 	private String namn;
-	private ArrayList<Kurs> kurs = new ArrayList<Kurs>();
 	private Schema sch;
 
 	public Elev(Schema s){
@@ -25,9 +23,5 @@ public class Elev{
 
 	public void setKlass(String k) {
 		klass = k;
-	}
-
-	public void addKurs(Kurs kur) {
-		kurs.add(kur);
 	}
 }
