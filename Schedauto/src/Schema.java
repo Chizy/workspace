@@ -12,6 +12,8 @@ public class Schema extends JLabel{
 	private Lektion[] platser= new Lektion[25];
 	private JPanel p1 = new JPanel();
 	private JPanel p2 = new JPanel();
+	int ks = 0;
+	int ks2 = 0;
 	
 	public Schema(){
 		this.setPreferredSize(new Dimension(1100,610));
@@ -29,23 +31,50 @@ public class Schema extends JLabel{
 		p2.setPreferredSize(new Dimension(30,600));
 		p2.setBackground(Color.white);
 		this.add(p2, BorderLayout.EAST);
+		for(int k=0;k<25;k++){
+			platser[k] = new Lektion();
+		}
 		for(int i=0;i<5;i++){
 			for(int i2=0;i2<9;i2++){
 				if(i2%2==0){
-					platser[i2] = new Lektion();
-					platser[i2].setOpaque(true);
-					pl[i].add(platser[i2]);
+					pl[i].add(platser[ks]);
+					ks++;
 				}else if(i2==3){
 					rast[i2] = new LunchRast();
-					rast[i2].setOpaque(true);
 					pl[i].add(rast[i2]);
 				}else{
 					rast[i2] = new Rast();
-					rast[i2].setOpaque(true);
 					pl[i].add(rast[i2]);
 				}
 			}
 		}
 		this.setVisible(true);
+	}
+
+	public int getFriPlats(int n) {
+		int p = -1;
+		int i = n;
+		int i2 = -1;
+		while(i<25){
+			p = platser[i].getUpptagen();
+			if(p==0){
+				i2 = i;
+				break;
+			}
+			i++;
+		}
+		return i2;
+	}
+	public int getPlats(int i) {
+		return platser[i].getUpptagen();
+	}
+	public void setKursPlats(int p, Kurs k) {
+		platser[p].setKurs(k);
+	}
+	public void setSalPlats(int p, Sal s) {
+		platser[p].setSal(s);
+	}
+	public void setLektion(int p) {
+		platser[p].setLektionNamn();
 	}
 }

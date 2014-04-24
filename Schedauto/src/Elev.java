@@ -14,6 +14,10 @@ public class Elev{
 	public String getNamn() {
 		return namn;
 	}
+	
+	public Schema getSchema() {
+		return sch;
+	}
 
 	public void setName(String n) {
 		namn = n;

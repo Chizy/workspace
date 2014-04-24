@@ -22,7 +22,14 @@ public class Lärare{
 		initial = i;
 	}
 
+	public String getName() {
+		return namn;
+	}
 	public void addKurs(Kurs kur) {
 		kurs.add(kur);
+	}
+
+	public Schema getSchema() {
+		return sch;
 	}
 }
